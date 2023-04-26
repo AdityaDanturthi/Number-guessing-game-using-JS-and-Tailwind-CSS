@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number guessing game using JS and Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="bg-gray-100 rwounded-lg p-4 m-60 overflow-x-hidden">
+        <span class="block text-gray-700 text-center px-4 py-2"></span>
+        <span class="block text-gray-700 text-center px-4 py-2">Num1: <input type="number" class="pl-1.5" id="num1" name="num1"></span>
+        <span class="block text-gray-700 text-center px-4 py-2">Num2: <input type="number" class="pl-1.5" id="num2" name="num2"></span>
+        <span class="block text-gray-700 text-center px-4 py-2"><button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" type="randomNumber" onclick="calc();">Generate a random number</button></span>
+        <span class="block text-gray-700 text-center px-4 py-2">Guess: <input type="number" class="pl-1.5" id="guessed" name="guessed"></span>
+        <span class="block text-gray-700 text-center px-4 py-2"><button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" type="numberGuess" onclick="checkGuess();">Guess</button></span>
+        <span class="block text-gray-700 text-center px-4 py-2">Message: <p id="guessMessage"></p></span>
+    </div>
+</body>
+</html>
