@@ -4,7 +4,7 @@ function calc() {
     const numb1 = document.getElementById("num1").value;
     const numb2 = document.getElementById("num2").value;
 
-    getRandomArbitary = (numb1, numb2) => Math.floor(Math.random() * (Number(numb2) - Number(numb1) + Number(numb1)));
+    getRandomArbitary = (numb1, numb2) => Math.floor(Math.random() * (Number(numb2) - Number(numb1)) + Number(numb1));
     toGuess = getRandomArbitary(numb1, numb2);
 }
 
