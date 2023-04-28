@@ -1,4 +1,5 @@
 var toGuess = 0;
+let guessedArr = [];
 
 function calc() {
     const numb1 = document.getElementById("num1").value;
@@ -9,7 +10,11 @@ function calc() {
 }
 
 function checkGuess() {
-    const guessed = document.getElementById("guessed").value;
+    let guessed = document.getElementById("guessed").value;
+
+    guessedArr.push(guessed);
+    document.getElementById('guesses').innerText = guessedArr;
+
     if( guessed == toGuess) {
         document.getElementById("guessMessage").innerText = "Congratulations!";
         document.getElementById("guessMessage").style.backgroundColor = "green";
